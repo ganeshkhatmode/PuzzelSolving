@@ -8,5 +8,9 @@ public class ExampleDemo {
         } else {
             System.out.println("Not even number");
         }
+
+        StringUtil stringUtil = name -> name.toUpperCase();
+        String uppercaseName = stringUtil.getNameUppercase("Ganesh digambar khatmode");
+        System.out.println("Name :: "+uppercaseName);
     }
 }
